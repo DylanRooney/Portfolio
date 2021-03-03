@@ -1,0 +1,67 @@
+:root {
+    --darkerRed: #2E1114;
+    --darkRed: #501B1D;
+    --darkPurple: #64485C;
+    --lightPurple: #83677B;
+    --lightGreen: #ADADAD;
+    --transition: .7s ease;
+    --fontSizeMedium: 3rem;
+    --max_percent: 100%;
+    --fontStyle: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--lightGreen);
+    font-weight: 100;
+}
+
+a {
+    text-decoration: none;
+    color: var(--lightGreen);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--darkerRed);
+    transition: var(--transition);
+}
+
+p {
+    line-height: 1.3;
+}
+
+li a {
+    transition: var(--transition);
+    color: var(--lightGreen);
+}
+
+li a:hover {
+    transition: var(--transition);
+    color: var(--darkerRed)
+}
+
+h2 {
+    font-size: var(--fontSizeMedium);
+    color: var(--lightGreen);
+    font-family: var(--fontStyle);
+    margin: 0 0 1rem 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: var(--max_percent);
+    height: 60px;
+    z-index: 2;
+    transition: var(--transition);
+}
